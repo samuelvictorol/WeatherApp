@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/loader.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<style>
+    /* fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+    /* fonts */
+</style>
+<body>
+    <div id="bg-container"></div>
+    <div id="weather-app">
+        <div id="modal-info" class="display-none animate__animated animate__fadeIn">
+            <div id="weather-info" class="animate__animated animate__backInDown"></div>
+        </div>
+        <div class="card">
+            <img id="icon-card" src="assets/icons/weather.svg" alt="icon weather">
+            <input type="text" id="locationInput" placeholder="Where do you want to know the weather?">
+            <button id="searchButton">Search</button>
+        </div>
+        <div id="weatherInfo"></div>
+    </div>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/backgroundUnsplash.js"></script>
+</body>
+</html>
